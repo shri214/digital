@@ -1,0 +1,174 @@
+.navbar {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.logo {
+  height: auto;
+}
+
+.logo img {
+  height: 26px;
+  max-width: 100%;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  align-self: baseline;
+}
+
+.items {
+  flex-basis: 25%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.items-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.items a {
+  color: white;
+  text-decoration: none;
+}
+
+.expand {
+  color: #6777a1 !important;
+}
+
+.slash {
+  color: #755efc;
+  margin-right: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.dn,
+.dNone {
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: visibility 0s, transform 0.3s;
+}
+.dNone {
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: visibility 0s, transform 0.3s;
+}
+
+.items-list:hover .dn,
+.arrInd:hover .dNone {
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.arrInd:hover {
+  color: #755efc;
+}
+
+.drop-down {
+  display: block;
+  position: absolute;
+  z-index: 555;
+  top: calc(100% + 10px);
+  left: -7px;
+  min-width: 250px;
+  white-space: nowrap;
+  margin: 0;
+  padding: 32px 0 30px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s ease-out;
+  box-shadow: 9px 11px 29px rgba(125, 138, 152, 0.15);
+  border-radius: 5px;
+  background-color: white;
+}
+
+.drop-down li {
+  color: black;
+  padding: 8px 16px;
+  list-style: none;
+}
+.arrInd {
+  padding: 5px !important;
+  display: flex;
+  align-items: center;
+}
+
+.items-list:hover .drop-down {
+  z-index: 556;
+  top: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ////////////////////////////
+///////////////////////////////// */
+.searchMenu {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.searchMenu input {
+  border: none;
+  width: 270px;
+  height: 50px;
+  background-color: #261d62;
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-right: 30px;
+  box-sizing: border-box;
+  padding: 0px 10px 0px 50px;
+  border-radius: 5px;
+  position: relative;
+}
+::placeholder {
+  color: white;
+}
+.search-icons {
+  position: absolute;
+  font-size: 1.3rem !important;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+.search-icons:hover {
+  color: #755efc;
+}
+.searchMenu input:focus {
+  outline: none;
+}
+
+.searchMenu button {
+  width: 105px;
+  height: 50px;
+  background-color: #755efc;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 16px 29px;
+
+  transition: all 1s;
+}
+
+.searchMenu button:hover {
+  background-color: white;
+  color: black;
+}

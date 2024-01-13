@@ -1,0 +1,63 @@
+.our-service-container {
+  background: url("../../assets/h-3.jpg") center/cover no-repeat;
+  height: 140vh;
+  padding: 116px 0px 92px 0px;
+}
+.services {
+  width: 1200px;
+  margin: auto;
+  /* border: 1px solid white; */
+  display: flex;
+  flex-flow: row;
+}
+.services-heading {
+  width: calc(100% / 3);
+  /* border: 1px solid red; */
+  height: fit-content;
+  padding: 0px 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 116px;
+}
+.mb-20 {
+  margin-bottom: 20px;
+}
+.services-lists {
+  width: calc(100% - (100% / 3));
+  /* border: 1px solid greenyellow; */
+}
+
+.mg {
+  margin: 15px 0px 30px 5px;
+}
+.col-white {
+  color: white;
+}
+.fs-5 {
+  font-size: 4.5rem;
+}
+.groups {
+  display: flex;
+  flex-flow: column;
+}
+.groups .number {
+  color: #755efc;
+  margin-bottom: 5px;
+}
+.des {
+  border-top: 1px solid gray;
+  color: white;
+  padding: 30px 10px 30px 20px;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.uiux {
+  font-size: 1.5rem;
+  width: 30%;
+}
+.group-des {
+  width: 60%;
+  line-height: 25px;
+}

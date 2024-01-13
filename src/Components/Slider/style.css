@@ -1,0 +1,33 @@
+.slider{
+    height: 80px ;
+    width: 100%;
+    background: linear-gradient(to right,rgb(117, 94, 252), rgb(15, 1, 81),rgb(15, 1, 81)) ;
+    margin-top: 66px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: hidden;
+    align-items: center;
+    gap: 10px;
+}
+.left-slider, .right-slider{
+    display: flex;
+    font-size: 1.6rem;
+    line-height: 0.935em;
+    gap: 10px;
+    letter-spacing: 1.4px;
+    color: white;
+}
+
+.slider div{
+    animation: marquee 10s linear infinite;
+}
+
+ 
+@keyframes marquee {
+  from {
+    left: translateX(0);
+  }
+  to {
+    transform: translateX(-56%);
+  }
+}
